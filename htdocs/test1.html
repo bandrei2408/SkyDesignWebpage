@@ -1,0 +1,40 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>
+$(function() {
+	$(".box").click(function() {
+		$(".box").toggleClass("box-change");
+	});
+});
+</script>
+<style type="text/css">
+.box {
+	width: 300px;
+	height: 300px;
+	background: #FFFFFF;
+	margin-top:10px;
+	padding-bottom: 300px;
+	-webkit-transition: margin-top 3s ease, padding-bottom 2.8s ease;
+	-moz-transition: width 0.5s ease, height 2s ease;
+	-o-transition: width 2s ease, height 2s ease;
+	-ms-transition: width 2s ease, height 2s ease;
+	transition: width 2s ease, height 2s ease;
+}
+
+.box-change {
+	width: 300px;
+	height: 300px;
+	margin-top: 400px;
+	padding-bottom: 0px;
+}
+</style>
+</head>
+<body>
+<img class="box" src="1.jpg">
+<div style="position:absolute; z-index: -1;top: 0px;">
+	<p style="color: #000000">TEST</p>
+	<p style="color: #000000">TEST</p><p style="color: #000000">TEST</p><p style="color: #000000">TEST</p><p style="color: #000000">TEST</p><p style="color: #000000">TEST</p><p style="color: #000000">TEST</p><p style="color: #000000">TEST</p><p style="color: #000000">TEST</p><p style="color: #000000">TEST</p><p style="color: #000000">TEST</p><p style="color: #000000">TEST</p>
+</div>
+</body>
+</html>
